@@ -1,4 +1,4 @@
-package com.tw.App;
+package com.tw;
 
 class SalesTax {
 

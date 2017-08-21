@@ -1,4 +1,4 @@
-package com.tw.App;
+package com.tw;
 
 public class AppTest {
     public static void main(String[] args) {
