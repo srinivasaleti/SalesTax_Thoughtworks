@@ -15,7 +15,7 @@ class ItemTest {
     @BeforeEach
     void before() {
         this.itemType = mock(ItemType.class);
-        this.item = new Item(this.itemType, 10);
+        this.item = new Item(this.itemType, 10,1);
     }
 
     @Test

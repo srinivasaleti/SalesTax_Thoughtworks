@@ -25,7 +25,7 @@ class SalesTaxCalculator {
     double totalCost(List<Item> items) {
         double total = 0;
         for (Item item : items) {
-            total += cost(item);
+            total += cost(item) * item.noOfItems();
         }
         return total;
     }
@@ -33,7 +33,7 @@ class SalesTaxCalculator {
     double totalTaxOnSingleItem(List<Item> items) {
         double total = 0;
         for (Item item : items) {
-            total += totalTaxOnSingleItem(item);
+            total += totalTaxOnSingleItem(item) * item.noOfItems();
         }
         return total;
     }
