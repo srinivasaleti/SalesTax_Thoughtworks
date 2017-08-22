@@ -9,7 +9,7 @@ class SalesTax {
     }
 
     void run() {
-        
+
     }
 
 }
