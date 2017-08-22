@@ -4,7 +4,6 @@ import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
 import java.io.PrintStream;
-import java.util.Scanner;
 
 import static org.mockito.Mockito.mock;
 import static org.mockito.Mockito.verify;
@@ -13,12 +12,10 @@ class ConsoleIOTest {
 
     private IO consoleIO;
     private PrintStream out;
-    private Scanner scanner;
 
     @BeforeEach
     void beforeEach() {
         this.out = mock(System.out.getClass());
-        this.scanner = new Scanner(System.in);
         this.consoleIO = new ConsoleIO(this.out);
     }
 
