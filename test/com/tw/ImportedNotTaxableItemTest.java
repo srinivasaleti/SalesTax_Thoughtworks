@@ -11,7 +11,7 @@ class ImportedNotTaxableItemTest {
 
     @BeforeEach
     void beforeAll() {
-        importedNotTaxableItem = new ImportedNotTaxableItem();
+        importedNotTaxableItem = ImportedNotTaxableItem.getInstance();
     }
 
     @Test
