@@ -2,7 +2,8 @@ package com.tw;
 
 public class AppTest {
     public static void main(String[] args) {
-        SalesTax salesTaX = new SalesTax(SalesTaxCalculator.getInstance());
+        IO consoleIO=new ConsoleIO(System.out);
+        SalesTax salesTaX = new SalesTax(SalesTaxCalculator.getInstance(),new ItemTypeFactory(),consoleIO);
         salesTaX.run();
     }
 }

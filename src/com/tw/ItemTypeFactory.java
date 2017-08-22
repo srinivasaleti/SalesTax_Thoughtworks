@@ -9,7 +9,7 @@ public class ItemTypeFactory implements Factory {
     private List<String> taxable;
 
     ItemTypeFactory() {
-        this.nonTaxable = Arrays.asList("book", "box of chocolate", "chocolate bar");
+        this.nonTaxable = Arrays.asList("book", "box of chocolates", "chocolate bar");
         this.taxable = Arrays.asList("music cd", "bottle of perfume");
     }
 

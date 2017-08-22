@@ -5,10 +5,12 @@ class Item {
     private final ItemType type;
     private final double price;
     private final int noOfItems;
+    private final String representation;
 
-    Item(ItemType itemType, double price,int noOfItems) {
+    Item(String representation, ItemType itemType, double price, int noOfItems) {
         this.type = itemType;
         this.price = price;
+        this.representation = representation;
         this.noOfItems=noOfItems;
     }
 
@@ -26,6 +28,10 @@ class Item {
 
     int noOfItems(){
         return this.noOfItems;
+    }
+
+    String representation() {
+        return this.representation;
     }
 
 }
